@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <button id="bnt">Click aqui!</button>
+   
+   <script>
+      const sanduiche = {
+         pao: "frances",
+         queijo: "cheddar",
+
+         prepare: function() {
+            return `Eu quero um saduíche com pão ${this.pao} e ${this.queijo} `
+         },
+
+         fazer: function() {
+            window.setTimeout(() => {
+               console.log(this.prepare())
+            }, 500);
+         }
+      }
+
+      const bnt = document.getElementById("bnt");
+
+      bnt.addEventListener("click", function() {sanduiche.fazer()});
+   </script>
+</body>
+</html>
