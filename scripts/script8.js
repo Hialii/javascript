@@ -16,7 +16,7 @@ class Queue {
 
 const fila = new Queue();
 
-fila.enqueue("José");
+fila.enqueue("Maria");
 fila.enqueue("Amanda");
 fila.enqueue("Bianca");
 
